@@ -215,6 +215,8 @@ p {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+
 }
 
 .packages-cards .package-speed {
@@ -231,7 +233,6 @@ p {
     transition: transform 1s;
     cursor: pointer;
     border-radius: 5px;
-    flex-wrap: wrap;
 }
 
 
