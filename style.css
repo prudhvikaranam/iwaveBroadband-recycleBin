@@ -23,6 +23,7 @@ p {
     top: 0;
     background: white;
     height: 12vh;
+    z-index: 10;
 }
 
 .navBar {
@@ -148,7 +149,8 @@ p {
 
 /* services */
 
-.service-header {
+.service-header,
+.contact-header {
     font-size: 40px;
     color: #f5a021;
     padding: 0px 0px 35px 0px;
@@ -239,8 +241,9 @@ p {
 }
 
 
-.package-card:hover{
+.package-card:hover {
     transform: scale(1.1);
+    background: white;
 }
 
 .package-card:nth-child(2) .package-speed {
@@ -280,4 +283,66 @@ p {
     padding: 61px 94px;
     font-size: 13px;
     color: grey;
+}
+
+
+/* Contact form */
+
+.contact-container {
+    display: flex;
+}
+
+.contact-container>* {
+    flex: 2;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    width: 85%;
+}
+
+label{
+    font-weight: 400;
+    font-size: 21px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 100%;
+    line-height: 26px;
+    margin-bottom: 10px;
+    color: #017ec1;;
+}
+
+input {
+    width: 70%;
+    height: 35px;
+    border: 1px solid #f5a021;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 5%;
+    color: black;
+    font-weight: 100;
+}
+
+input:focus {
+    border: 1px solid #017ec1;
+}
+
+ textarea {
+    width: 70%;
+    margin-left: 10px;
+    border: 1px solid #f5a021;
+    outline: none;
+    border-radius: 5%;
+}
+
+
+.map{
+    width: 90%;
+    height: 309px;
 }
