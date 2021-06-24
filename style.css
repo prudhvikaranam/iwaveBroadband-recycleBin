@@ -1,0 +1,283 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body>* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+p {
+    margin: 0px;
+}
+
+/* Navigation Bar */
+
+.navigator {
+    box-shadow: 1px 1px 5px 1px #ffd9a0;
+    position: sticky;
+    top: 0;
+    background: white;
+    height: 12vh;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.navBar-image {
+    width: 180px;
+}
+
+.navBar .navBar-items {
+    flex: 2;
+    text-align: center;
+}
+
+.navBar .navBar-items>* {
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #017ec1;
+}
+
+
+.navBar .navBar-contactnumber a>* {
+    font-size: 18px;
+    color: #f5a021;
+}
+
+
+/* Lander */
+
+.lander {
+    /* background: linear-gradient(0deg, rgb(14 100 109), rgb(14 100 132)), url(./assets/images/bannerbackground.jpg) no-repeat center center/cover;;
+    background-blend-mode: overlay; */
+    background: url(./assets/images/bannerbackground.jpg) no-repeat center center/cover;
+    height: 88vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.lander .lander-hero {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lander .lander-hero h1 {
+    color: #017ec1;
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+.lander .lander-hero p {
+    color: #f5a021;
+    font-size: 20px;
+
+}
+
+.lander .btn-primary {
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+/* about */
+
+.sections {
+    padding: 50px 0px;
+    box-shadow: 1px 1px 3px 0px grey;
+}
+
+
+.about-header {
+    font-size: 40px;
+    color: #017ec1;
+    padding: 0px 0px 35px 0px;
+}
+
+.aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutus .about {
+    width: 50%;
+}
+
+.aboutus .about-content {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+
+
+.aboutus .about-image {
+    width: 30%;
+}
+
+.about>.about-image {
+    flex: 1 2;
+}
+
+.fa-check {
+    color: #f5a021;
+}
+
+.customer-status {
+    font-size: 25px;
+}
+
+.customers-count {
+    font-size: 35px;
+    color: #f5a021;
+}
+
+/* services */
+
+.service-header {
+    font-size: 40px;
+    color: #f5a021;
+    padding: 0px 0px 35px 0px;
+    text-align: center;
+}
+
+.services-block {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services-block .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-icons {
+    width: 70px;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 55px 0px;
+}
+
+.services-cards .card {
+    width: 20%;
+    text-align: center;
+}
+
+.services-cards .card-header {
+    font-size: 20px;
+    color: #017ec1;
+    padding: 9px;
+}
+
+.services-cards .card-content {
+    padding: 8px 0px;
+}
+
+.services-cards .card-image {
+    width: 100%;
+    height: 20em;
+}
+
+
+/* Packages */
+
+.package-header {
+    font-size: 40px;
+    color: #017ec1;
+    padding: 0px 0px 35px 0px;
+    text-align: center;
+}
+
+
+
+
+.packages-cards {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.packages-cards .package-speed {
+    font-size: 50px;
+    padding: 35px 0px;
+    background: #67c7fb;
+    color: white;
+}
+
+.package-card {
+    border: 1px solid #67c7fb;
+    padding: 10px;
+    box-shadow: 1px 1px 3px 1px #67c7fb;
+    transition: transform 1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.package-card:nth-child(2) {
+    border: 1px solid #f3c47f;
+    box-shadow: 1px 1px 3px 1px #f3c47f;
+    border-radius: 5px;
+}
+
+
+.package-card:hover{
+    transform: scale(1.1);
+}
+
+.package-card:nth-child(2) .package-speed {
+    background: #f3c47f;
+
+}
+
+.validities {
+    padding: 30px 0px;
+}
+
+.package-validity {
+    padding: 10px 0px;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300;
+}
+
+.package-validity-3 {
+    font-size: 20px;
+}
+
+.package-validity-6 {
+    font-size: 25px;
+}
+
+.package-validity-12 {
+    font-size: 28px;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.terms {
+    padding: 61px 94px;
+    font-size: 13px;
+    color: grey;
+}
