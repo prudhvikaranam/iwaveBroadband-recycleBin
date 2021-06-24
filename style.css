@@ -231,6 +231,7 @@ p {
     transition: transform 1s;
     cursor: pointer;
     border-radius: 5px;
+    flex-wrap: wrap;
 }
 
 
