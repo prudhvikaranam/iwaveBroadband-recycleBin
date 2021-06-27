@@ -86,6 +86,11 @@ p {
 } */
 
 
+.lander{
+    position: relative;
+}
+
+
 .lander-image-text {
     position: absolute;
     bottom: 151px;
@@ -396,4 +401,19 @@ textarea {
 .footer {
     height: 25px;
     background: #017ec1;
+}
+
+
+
+.selector{
+    bottom: 50px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-selector{
+    width: 2%;
+    height: 19px;
+    position: relative;
 }
