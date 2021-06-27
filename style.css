@@ -86,7 +86,7 @@ p {
 } */
 
 
-.lander{
+.lander {
     position: relative;
 }
 
@@ -110,14 +110,13 @@ p {
 
 .lander .lander-hero h1 {
     color: #017ec1;
-    font-size: 45px;
+    font-size: 3vw;
     font-weight: bold;
-
 }
 
 .lander .lander-hero p {
     color: #f5a021;
-    font-size: 20px;
+    font-size: 1.5vw;
 
 }
 
@@ -126,7 +125,7 @@ p {
     padding: 10px;
 }
 
-.lander-text > *{
+.lander-text>* {
     padding: 20px 0px;
 }
 
@@ -405,15 +404,32 @@ textarea {
 
 
 
-.selector{
+.selector {
     bottom: 50px;
     position: absolute;
     width: 100%;
     text-align: center;
 }
 
-.slider-selector{
+.slider-selector {
     width: 2%;
     height: 19px;
     position: relative;
+}
+
+
+
+@media (min-width : 320px) and (max-width : 768px) {
+    .lander-image-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .lander .lander-hero h1 {
+        font-size: 5vw;
+    }
+
+    .lander .lander-hero p {
+        font-size: 3vw;
+    }
 }
