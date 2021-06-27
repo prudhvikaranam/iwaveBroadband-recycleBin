@@ -256,7 +256,7 @@ p {
 }
 
 .packages-cards .package-speed {
-    font-size: 50px;
+    font-size: 4vw;
     padding: 35px 0px;
     background: #67c7fb;
     color: white;
@@ -269,6 +269,7 @@ p {
     transition: transform 1s;
     cursor: pointer;
     border-radius: 5px;
+    width: 25%;
 }
 
 
@@ -302,15 +303,15 @@ p {
 }
 
 .package-validity-3 {
-    font-size: 20px;
+    font-size: 1.4vw;
 }
 
 .package-validity-6 {
-    font-size: 25px;
+    font-size: 1.8vw;
 }
 
 .package-validity-12 {
-    font-size: 28px;
+    font-size: 2.2vw;
 }
 
 .price {
@@ -437,6 +438,23 @@ textarea {
     .services-cards .card {
         width: 66%;
     }
+
+    .package-card {
+        width: 66%;
+        margin: 15px 0px;
+    }
+
+    .package-validity-3 {
+        font-size: 2vw;
+    }
+    
+    .package-validity-6 {
+        font-size: 2.4vw;
+    }
+    
+    .package-validity-12 {
+        font-size: 2.8vw;
+    }
    
 }
 
@@ -452,5 +470,8 @@ textarea {
     }
     .about-header {
         text-align: center;
+    }
+    .contact-container{
+        display: block;
     }
 }
