@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body>* {
     padding: 0%;
     margin: 0%;
@@ -13,6 +17,19 @@ body>* {
 h1,
 p {
     margin: 0px;
+}
+
+/* scroll to sections */
+
+
+#aboutus,
+#services,
+#packages,
+#contact {
+    display: block;
+    height: 92px;
+    margin-top: -92px;
+    visibility: hidden;
 }
 
 /* Navigation Bar */
@@ -58,22 +75,32 @@ p {
 
 /* Lander */
 
-.lander {
-    /* background: linear-gradient(0deg, rgb(14 100 109), rgb(14 100 132)), url(./assets/images/bannerbackground.jpg) no-repeat center center/cover;;
+/* #lander { */
+/* background: linear-gradient(0deg, rgb(14 100 109), rgb(14 100 132)), url(./assets/images/bannerbackground.jpg) no-repeat center center/cover;;
     background-blend-mode: overlay; */
-    background: url(./assets/images/bannerbackground.jpg) no-repeat center center/cover;
+/* background: url(./assets/images/bannerbackground.jpg) no-repeat center center/cover;
     height: 88vh;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-}
+} */
 
-.lander .lander-hero {
+
+.lander-image-text {
+    position: absolute;
+    bottom: 151px;
     height: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+#lander .lander-hero>img {
+    width: 100%;
+    height: 88vh;
 }
 
 .lander .lander-hero h1 {
@@ -92,6 +119,10 @@ p {
 .lander .btn-primary {
     font-size: 18px;
     padding: 10px;
+}
+
+.lander-text > *{
+    padding: 20px 0px;
 }
 
 
@@ -359,4 +390,10 @@ textarea {
 .contact-address {
     font-size: 18px;
     font-weight: 300;
+}
+
+
+.footer {
+    height: 25px;
+    background: #017ec1;
 }

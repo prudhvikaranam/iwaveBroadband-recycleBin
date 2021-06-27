@@ -15,7 +15,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="./assets/javascript/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/javascript/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/assets/javascript/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -25,6 +28,10 @@
 </head>
 
 <body>
+
+
+
+
     <div class="body-container" id="body-container">
 
         <!-- Navigator -->
@@ -43,7 +50,7 @@
                     <a href="#aboutus">About Us</a>
                     <a href="#services">Services</a>
                     <a href="#packages">Packages</a>
-                    <a href="#">Contact Us</a>
+                    <a href="#contact">Contact Us</a>
                 </div>
                 <div class="navBar-contactnumber" id="navBar-contactnumber">
                     <a href="tel:+91 9848012345"><i class="fa fa-mobile" aria-hidden="true">+91 98480
@@ -57,20 +64,56 @@
         <!-- Lander -->
 
         <div class="lander" id="lander">
-            <div class="lander-hero" id="landerhero">
-                <h1>
-                    FIBER TO THE HOME
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Similique laudantium reiciendis magni</p>
-                <button class="btn btn-primary"><i class="fa fa-download"></i>&nbsp;&nbsp;&nbsp;Download
-                    brochure</button>
+            <div class="lander-hero active" id="slider1">
+                <img src="./assets/images/bannerbackground.jpg" alt="">
+                <div class="lander-image-text" id="lander-image-text">
+                    <div class="lander-text" id="lander-text">
+                        <h1>
+                            FIBER TO THE HOME
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Similique laudantium reiciendis magni</p>
+                        <button class="btn btn-primary"><i class="fa fa-download"></i>&nbsp;&nbsp;&nbsp;Download
+                            brochure</button>
+                    </div>
+                </div>
+            </div>
+            <div class="lander-hero" id="slider2">
+                <img src="./assets/images/bannerbackground1.jpg" alt="">
+                <div class="lander-image-text" id="lander-image-text">
+                    <div class="lander-text" id="lander-text">
+                        <h1>
+                            FIBER TO THE HOME
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Similique laudantium reiciendis magni</p>
+                        <button class="btn btn-primary"><i class="fa fa-download"></i>&nbsp;&nbsp;&nbsp;Download
+                            brochure</button>
+                    </div>
+                </div>
+            </div>
+            <div class="lander-hero" id="slider3">
+                <img src="./assets/images/bannerbackground2.jpg" alt="">
+                <div class="lander-image-text" id="lander-image-text">
+                    <div class="lander-text" id="lander-text">
+                        <h1>
+                            FIBER TO THE HOME
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Similique laudantium reiciendis magni</p>
+                        <button class="btn btn-primary"><i class="fa fa-download"></i>&nbsp;&nbsp;&nbsp;Download
+                            brochure</button>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- About -->
-
-        <div class="aboutus sections" id="aboutus sections">
+        <span id="aboutus"></span>
+        <div class="aboutus sections">
             <div class="about" id="about">
                 <p class="about-header" id="about-header">About us</p>
                 <p class="about-content" id="about-content">
@@ -103,7 +146,8 @@
         </div>
 
         <!-- Services -->
-        <div class="services sections" id="services sections">
+        <span id="services"></span>
+        <div class="services sections">
             <!-- <div class="service" id="service"> -->
             <p class="service-header" id="service-header">Our Services</p>
             <div class="services-block" id="services-block">
@@ -145,7 +189,8 @@
 
 
         <!-- Packages -->
-        <div class="packages sections" id="packages sections">
+        <span id="packages"></span>
+        <div class="packages sections">
             <p class="package-header" id="package-header">Our Exciting Packages</p>
             <div class="packages-cards" id="packages-cards">
                 <div class="package-card" id="package-card">
@@ -203,7 +248,8 @@
 
 
         <!-- Contact -->
-        <div class="contact sections" id="contact sections">
+        <span id="contact"></span>
+        <div class="contact sections">
             <p class="contact-header" id="contact-header">Contact Us</p>
             <div class="contact-container" id="contact-container">
                 <div class="contact-form" id="contact-form">
@@ -233,10 +279,18 @@
                         width="95%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
                     <span class="contact-address" id="contact-address"> Vyjayanthi Cinema<br>
-                        Nacharam - Mallapur Rd, near Bus Stop, New Raghavendra Nagar, Sri Sai Nagar, Nacharam, Hyderabad, Telangana 500076</span>
+                        Nacharam - Mallapur Rd, near Bus Stop, New Raghavendra Nagar, Sri Sai Nagar, Nacharam,
+                        Hyderabad, Telangana 500076</span>
                 </div>
-                
+
             </div>
+        </div>
+
+
+        <!-- Footer -->
+
+        <div class="footer" id="footer">
+
         </div>
 
     </div>
