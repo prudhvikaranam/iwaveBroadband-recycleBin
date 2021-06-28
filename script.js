@@ -48,43 +48,8 @@ function showDivs(n) {
 
 // Hamburger
 
-
 let hamburgerIcon = document.getElementById('hamburger');
-
+let navBar = document.getElementById('navBar-items');
 hamburgerIcon.addEventListener('click', () => {
-    document.getElementById('navBar-items').style.display = document.getElementById('navBar-items').style.display === 'none' ? '' : 'none';
+  navBar.classList.toggle('navBarActive');
 })
-
-// slide shows
-
-// const items = document.querySelectorAll("#body-container > div");
-
-// console.log(items);
-
-// const isInViewport = (el) => {
-//   const rect = el.getBoundingClientRect();
-//   console.log(el.classList[0]);
-
-// //   console.log(el.classList.indexOf('aboutus'));
-//   if(el.classList[0] == 'aboutus'){
-//     console.log(rect);
-//   }
-
-//   return (
-//     rect.top <= 120 &&
-//     rect.left >= 0 &&
-//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//   );
-// };
-
-// const run = () =>
-//   items.forEach(item => {
-//     if (isInViewport(item)) {
-//       item.classList.add('elementActivated');
-//     }
-//   });
-
-// // Events
-// window.addEventListener('load', run);
-// window.addEventListener('resize', run);
-// window.addEventListener("scroll", run);

@@ -47,11 +47,16 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 0px;
+}
+
+
+.navBar-logo {
+    max-width: 13%;
 }
 
 .navBar-image {
-    width: 180px;
+    width: 100%;
 }
 
 .navBar .navBar-items {
@@ -60,17 +65,26 @@ p {
 }
 
 .navBar .navBar-items>* {
-    padding: 0px 20px;
+    padding: 0px 15px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 0.9rem;
     color: #017ec1;
 }
 
 
 .navBar .navBar-contactnumber a>* {
-    font-size: 18px;
+    font-size: 0.9rem;
     color: #f5a021;
 }
+
+
+
+.hamburger {
+    display: none;
+}
+
+
+
 
 
 /* Lander */
@@ -334,9 +348,6 @@ p {
     padding: 0px 29px;
 }
 
-/* .contact-container>* {
-    flex: 2;
-} */
 
 .contact-form {
     flex: 2;
@@ -371,7 +382,7 @@ input {
     border: 1px solid #f5a021;
     outline: none;
     margin-left: 10px;
-    border-radius: 5%;
+    border-radius: 5px;
     color: black;
     font-weight: 100;
 }
@@ -385,7 +396,7 @@ textarea {
     margin-left: 10px;
     border: 1px solid #f5a021;
     outline: none;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 
@@ -418,6 +429,25 @@ textarea {
     width: 2%;
     height: 19px;
     position: relative;
+}
+
+
+/* Media Queries */
+
+
+
+@media (min-width : 320px) and (max-width : 480px) {
+
+    .navBar-logo {
+        max-width: 30%;
+    }
+}
+
+@media (min-width : 481px) and (max-width : 786px) {
+
+    .navBar-logo {
+        max-width: 20%;
+    }
 }
 
 
@@ -478,91 +508,16 @@ textarea {
     .contact-container {
         display: block;
     }
+    .navBar-contactnumber{
+        display: none;
+    }
 }
-
-
-
-
-/* left */
-/* .aboutus .about{
-    position: relative;
-    left: -25%;
-    visibility: hidden;
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-}
-
-
-.elementActivated .about{
-    transform: none;
-    visibility: visible !important;
-    left: 0%;
-    opacity: 1;
-} */
-/* right */
-
-/* .aboutus .about-image{
-    position: relative;
-    right: -25%;
-    visibility: hidden;
-    transition: all 0.9s ease-in-out;
-    opacity: 0;
-}
-
-.elementActivated .about-image{
-    transform: none;
-    visibility: visible !important;
-    right: 0%;
-    opacity: 1;
-}  */
-
-/* Services from left */
-/* .services .services-cards{
-    position: relative;
-    left: -99%;
-    visibility: hidden;
-    transition: all 0.5s ease-in-out;
-    opacity: 0;
-}
-
-.elementActivated .services-cards{
-    transform: none;
-    visibility: visible !important;
-    left: 0%;
-    opacity: 1;
-}  */
-/* Packages from right */
-
-/* .packages .packages-cards{
-    position: relative;
-    right: -99%;
-    visibility: hidden;
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-}
-
-.elementActivated .packages-cards{
-    transform: none;
-    visibility: visible !important;
-    right: 0%;
-    opacity: 1;
-}  */
-
-
-
-
-.hamburger {
-    display: none;
-}
-
 
 
 
 @media (min-width : 320px) and (max-width : 786px) {
 
-    /* .navBar-items{
-        display: none;
-    } */
+
     .navBar-contactnumber {
         display: none;
     }
@@ -579,15 +534,25 @@ textarea {
     }
 
     .navBar-items {
-        display: flex;
         flex-direction: column;
         position: absolute;
-        right: 0px;
         top: 63px;
         background-color: rgb(254 254 254 / 70%);
-        width: 26%;
+        width: 40%;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
+        display: flex;
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+        right: -26%;
+        padding: 10px 0px;
+    }
+
+    .navBarActive {
+        display: flex; 
+        right: 0%;
+        opacity: 1;
+        /* transition: all 0.2s ease-in-out; */
     }
 
     .navBar .navBar-items>* {
