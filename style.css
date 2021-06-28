@@ -55,7 +55,7 @@ p {
 }
 
 .navBar .navBar-items {
-    flex: 2;
+    /* flex: 2; */
     text-align: center;
 }
 
@@ -448,31 +448,34 @@ textarea {
     .package-validity-3 {
         font-size: 2vw;
     }
-    
+
     .package-validity-6 {
         font-size: 2.4vw;
     }
-    
+
     .package-validity-12 {
         font-size: 2.8vw;
     }
-   
+
 }
 
 
 
 
-@media (max-width: 900px){
-    .about-image{
+@media (max-width: 900px) {
+    .about-image {
         display: none;
     }
+
     .aboutus .about {
         width: 90%;
     }
+
     .about-header {
         text-align: center;
     }
-    .contact-container{
+
+    .contact-container {
         display: block;
     }
 }
@@ -480,12 +483,8 @@ textarea {
 
 
 
-/* .body-container .sections{
-    visibility: hidden;
-} */
-
 /* left */
-.aboutus .about{
+/* .aboutus .about{
     position: relative;
     left: -25%;
     visibility: hidden;
@@ -499,10 +498,10 @@ textarea {
     visibility: visible !important;
     left: 0%;
     opacity: 1;
-}
+} */
 /* right */
 
-.aboutus .about-image{
+/* .aboutus .about-image{
     position: relative;
     right: -25%;
     visibility: hidden;
@@ -515,10 +514,10 @@ textarea {
     visibility: visible !important;
     right: 0%;
     opacity: 1;
-} 
+}  */
 
 /* Services from left */
-.services .services-cards{
+/* .services .services-cards{
     position: relative;
     left: -99%;
     visibility: hidden;
@@ -531,10 +530,10 @@ textarea {
     visibility: visible !important;
     left: 0%;
     opacity: 1;
-} 
+}  */
 /* Packages from right */
 
-.packages .packages-cards{
+/* .packages .packages-cards{
     position: relative;
     right: -99%;
     visibility: hidden;
@@ -547,4 +546,51 @@ textarea {
     visibility: visible !important;
     right: 0%;
     opacity: 1;
-} 
+}  */
+
+
+
+
+.hamburger {
+    display: none;
+}
+
+
+
+
+@media (min-width : 320px) and (max-width : 786px) {
+
+    /* .navBar-items{
+        display: none;
+    } */
+    .navBar-contactnumber {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        width: 7%;
+    }
+
+    .hamburger .menuLink {
+        background: #f5a021;
+        height: 5px;
+        margin: 17% 0;
+    }
+
+    .navBar-items {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        top: 63px;
+        background-color: rgb(254 254 254 / 70%);
+        width: 26%;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .navBar .navBar-items>* {
+        padding: 10px 0px;
+    }
+}

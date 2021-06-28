@@ -46,36 +46,45 @@ function showDivs(n) {
 
 
 
+// Hamburger
+
+
+let hamburgerIcon = document.getElementById('hamburger');
+
+hamburgerIcon.addEventListener('click', () => {
+    document.getElementById('navBar-items').style.display = document.getElementById('navBar-items').style.display === 'none' ? '' : 'none';
+})
+
 // slide shows
 
-const items = document.querySelectorAll("#body-container > div");
+// const items = document.querySelectorAll("#body-container > div");
 
-console.log(items);
+// console.log(items);
 
-const isInViewport = (el) => {
-  const rect = el.getBoundingClientRect();
-  console.log(el.classList[0]);
+// const isInViewport = (el) => {
+//   const rect = el.getBoundingClientRect();
+//   console.log(el.classList[0]);
 
-//   console.log(el.classList.indexOf('aboutus'));
-  if(el.classList[0] == 'aboutus'){
-    console.log(rect);
-  }
+// //   console.log(el.classList.indexOf('aboutus'));
+//   if(el.classList[0] == 'aboutus'){
+//     console.log(rect);
+//   }
 
-  return (
-    rect.top <= 120 &&
-    rect.left >= 0 &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-};
+//   return (
+//     rect.top <= 120 &&
+//     rect.left >= 0 &&
+//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//   );
+// };
 
-const run = () =>
-  items.forEach(item => {
-    if (isInViewport(item)) {
-      item.classList.add('elementActivated');
-    }
-  });
+// const run = () =>
+//   items.forEach(item => {
+//     if (isInViewport(item)) {
+//       item.classList.add('elementActivated');
+//     }
+//   });
 
-// Events
-window.addEventListener('load', run);
-window.addEventListener('resize', run);
-window.addEventListener("scroll", run);
+// // Events
+// window.addEventListener('load', run);
+// window.addEventListener('resize', run);
+// window.addEventListener("scroll", run);
